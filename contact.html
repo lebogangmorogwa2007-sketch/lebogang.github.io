@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Department of Computer Science</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="modules.html">Modules</a> | 
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <hr>
 
+    <main>
+        <h3>Contact and Enquiry Form</h3>
+        
+        <!-- HTML Form -->
+        <form action="#" method="POST">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="firstname" required>
+                </p>
+                <p>
+                    <label for="surname">Surname:</label><br>
+                    <input type="text" id="surname" name="surname" required>
+                </p>
+                <p>
+                    <label for="email">Email address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="student_num">Student number:</label><br>
+                    <input type="text" id="student_num" name="student_number">
+                </p>
+            </fieldset>
+            
+            <!-- Enquiry Type Selection Dropdown -->
+            <fieldset>
+                <legend>Enquiry Type</legend>
+                <p>
+                    <label for="enquiry">Select an option:</label><br>
+                    <select id="enquiry" name="enquiry_type">
+                        <option value="general">General enquiry</option>
+                        <option value="programme">Programme information</option>
+                        <option value="registration">Registration</option>
+                        <option value="technical">Technical support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <!-- Message Textarea -->
+            <fieldset>
+                <legend>Message</legend>
+                <p>
+                    <label for="message">Enter your query here:</label><br>
+                    <textarea id="message" name="message_text" rows="5" cols="40" placeholder="Type your message..."></textarea>
+                </p>
+            </fieldset>
+
+            <!-- Preferred Contact Method Radio Buttons -->
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <p>
+                    <input type="radio" id="pref_email" name="contact_method" value="Email" checked>
+                    <label for="pref_email">Email</label>
+                </p>
+                <p>
+                    <input type="radio" id="pref_phone" name="contact_method" value="Phone">
+                    <label for="pref_phone">Phone</label>
+                </p>
+                <p>
+                    <input type="radio" id="pref_sms" name="contact_method" value="SMS">
+                    <label for="pref_sms">SMS</label>
+                </p>
+            </fieldset>
+            <br>
+            
+            <!-- Form Control Buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Department of Computer Science.</p>
+    </footer>
+</body>
+</html>
